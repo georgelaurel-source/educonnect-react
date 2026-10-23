@@ -1,0 +1,719 @@
+/* Tablet and mobile overrides. Loaded after desktop/styles.css. */
+@media (max-width: 1050px) {
+  .container {
+    width: calc(100% - 44px);
+  }
+  .header-content {
+    gap: 20px;
+  }
+  .main-nav {
+    gap: 19px;
+  }
+  .main-nav > a {
+    font-size: 12px;
+  }
+  .brand > span {
+    font-size: 23px;
+  }
+  .header-actions {
+    gap: 5px;
+  }
+  .hero-copy {
+    padding: 34px;
+  }
+  .hero-handwriting {
+    right: 6%;
+  }
+  .subjects-grid {
+    gap: 12px;
+  }
+  .subject-card {
+    padding: 16px 12px;
+    gap: 10px;
+  }
+  .subject-icon {
+    width: 39px;
+    height: 39px;
+  }
+  .subject-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+  .subject-arrow {
+    display: none;
+  }
+  .subject-card h3 {
+    font-size: 13px;
+  }
+  .resource-card {
+    padding: 17px;
+  }
+  .detail-heading {
+    grid-template-columns: 110px 1fr;
+    gap: 22px;
+  }
+  .resource-thumb.large {
+    width: 110px;
+    height: 125px;
+  }
+  .detail-top-save {
+    grid-column: 2;
+  }
+  .detail-layout {
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+  }
+  .reading-main {
+    grid-template-columns: 140px 1fr;
+    gap: 20px;
+  }
+  .reading-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .reading-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-hero {
+    padding: 35px;
+    gap: 30px;
+  }
+  .about-hero h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 760px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: calc(100% - 32px);
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .header-content {
+    min-height: 75px;
+    gap: 9px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 13px 0;
+  }
+  .brand {
+    gap: 7px;
+  }
+  .brand > svg {
+    width: 35px;
+    height: 35px;
+  }
+  .brand > span {
+    font-size: 23px;
+  }
+  .brand small {
+    font-size: 8px;
+  }
+  .menu-button {
+    display: inline-flex;
+    margin-left: auto;
+    order: 2;
+  }
+  .header-actions {
+    margin-left: auto;
+    order: 1;
+    gap: 2px;
+  }
+  .header-actions .account-icon {
+    display: none;
+  }
+  .main-nav {
+    display: none;
+    order: 3;
+    width: 100%;
+    height: auto;
+    margin: 7px 0 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    border-top: 1px solid var(--line);
+    padding-top: 8px;
+  }
+  .main-nav.is-open {
+    display: flex;
+  }
+  .main-nav > a {
+    font-size: 14px;
+    padding: 12px 5px;
+    height: auto;
+  }
+  .main-nav > a[aria-current="page"]:after {
+    display: none;
+  }
+  .main-nav > a[aria-current="page"] {
+    background: #eaf3ff;
+    border-radius: 6px;
+    padding-left: 10px;
+  }
+  .page-main {
+    padding-top: 25px;
+    padding-bottom: 35px;
+    min-height: calc(100vh - 175px);
+  }
+  .home-main {
+    padding-top: 15px;
+  }
+  .hero {
+    min-height: 490px;
+  }
+  .hero-copy {
+    padding: 27px 22px;
+    max-width: none;
+  }
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: -0.9px;
+  }
+  .hero .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.4px;
+    max-width: 250px;
+  }
+  .hero-copy > p:not(.eyebrow) {
+    font-size: 13px;
+    max-width: 350px;
+  }
+  .desktop-break {
+    display: none;
+  }
+  .hero-photo {
+    object-position: 69% center;
+  }
+  .hero-overlay {
+    background: linear-gradient(100deg, #06264fed, #06264fd4 45%, #092e5570);
+  }
+  .hero-handwriting {
+    top: auto;
+    bottom: 31px;
+    right: 23px;
+    font-size: 22px;
+  }
+  .hero-search {
+    margin-top: 22px;
+    margin-bottom: 23px;
+    max-width: 450px;
+  }
+  .search-input {
+    padding: 0 10px;
+    gap: 8px;
+  }
+  .search-input input {
+    font-size: 12px;
+    height: 44px;
+  }
+  .search-input svg {
+    width: 17px;
+  }
+  .hero-search .search-input input {
+    font-size: 11px;
+  }
+  .search-form > .button {
+    min-width: 76px;
+    padding: 11px 13px;
+    font-size: 12px;
+  }
+  .hero-bottom {
+    gap: 14px;
+  }
+  .hero-bottom > p {
+    font-size: 13px;
+  }
+  .sdg-badge {
+    width: 70px;
+    min-width: 70px;
+    height: 72px;
+  }
+  .popular-section {
+    padding-top: 22px;
+  }
+  .popular-section h2 {
+    font-size: 21px;
+  }
+  .subject-pills {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .subject-pills > a {
+    font-size: 10px;
+    padding: 8px 6px;
+    gap: 5px;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  .pill-symbol {
+    font-size: 12px;
+    min-width: 17px;
+  }
+  .js-symbol {
+    font-size: 10px;
+    min-width: 19px;
+    padding: 3px;
+  }
+  .home-section {
+    margin-top: 25px;
+  }
+  .section-title {
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .section-title h2 {
+    font-size: 21px;
+  }
+  .section-title > a {
+    font-size: 10px;
+  }
+  .subjects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .subject-card {
+    align-items: flex-start;
+    padding: 15px 12px;
+    gap: 8px;
+    min-height: 118px;
+    flex-direction: column;
+  }
+  .subject-icon {
+    width: 33px;
+    height: 33px;
+  }
+  .subject-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  .subject-card h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .subject-card p {
+    font-size: 11px;
+  }
+  .resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .resource-card {
+    padding: 15px 12px;
+    border-radius: 10px;
+  }
+  .resource-thumb {
+    width: 53px;
+    height: 56px;
+    font-size: 21px;
+  }
+  .card-image-link {
+    margin-bottom: 12px;
+  }
+  .resource-card h3 {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+  }
+  .card-provider {
+    font-size: 9px;
+  }
+  .card-description {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+  .card-tags-row {
+    gap: 0;
+    margin-bottom: 9px;
+  }
+  .tags {
+    gap: 4px;
+  }
+  .tags > span {
+    font-size: 9px;
+    padding: 3px 5px;
+  }
+  .bookmark-button {
+    width: 25px;
+    height: 30px;
+  }
+  .bookmark-button svg {
+    width: 16px;
+  }
+  .card-actions > .primary-button {
+    font-size: 10px;
+    padding: 10px 5px;
+    gap: 6px;
+  }
+  .education-banner {
+    padding: 14px 12px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .education-banner > svg {
+    width: 30px;
+  }
+  .education-banner > div:not(.sdg-badge) {
+    flex: 1;
+    min-width: 170px;
+  }
+  .education-banner strong {
+    font-size: 12px;
+  }
+  .education-banner p {
+    font-size: 10px;
+  }
+  .education-banner > .sdg-badge {
+    display: none;
+  }
+  .education-banner > span:not(.banner-cta) {
+    display: none;
+  }
+  .education-banner > .banner-cta {
+    font-size: 11px;
+    margin-left: 42px;
+  }
+  .footer-content {
+    min-height: 95px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 13px;
+    font-size: 10px;
+    padding: 16px 0;
+  }
+  .footer-divider {
+    margin: 0 7px;
+  }
+  .footer-content > div {
+    gap: 22px;
+  }
+  .page-heading {
+    margin-bottom: 20px;
+  }
+  .page-heading h1 {
+    font-size: 28px;
+  }
+  .page-heading > p:last-child {
+    font-size: 13px;
+  }
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+  }
+  .filter-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px 15px;
+    margin-top: 18px;
+  }
+  .filter-row label {
+    font-size: 11px;
+    gap: 5px;
+    min-width: 0;
+  }
+  .filter-row select {
+    font-size: 12px;
+    height: 39px;
+  }
+  .results-summary {
+    font-size: 11px;
+    gap: 10px;
+    margin-top: 19px;
+  }
+  .results-summary > span {
+    font-size: 9px;
+    max-width: 125px;
+    text-align: right;
+  }
+  .pagination {
+    gap: 6px;
+    margin-top: 24px;
+  }
+  .pagination button {
+    min-width: 33px;
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+  .catalogue-note {
+    font-size: 10px;
+  }
+  .back-link {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+  .detail-heading {
+    grid-template-columns: 78px 1fr;
+    gap: 14px;
+  }
+  .resource-thumb.large {
+    width: 78px;
+    height: 100px;
+    font-size: 27px;
+    border-radius: 8px;
+  }
+  .detail-heading h1 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 7px 0 10px;
+  }
+  .detail-heading p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .provider-link {
+    font-size: 10px;
+  }
+  .detail-heading .tags {
+    margin-top: 10px;
+  }
+  .detail-top-save {
+    grid-column: 1/-1;
+  }
+  .detail-top-save .button {
+    padding: 9px 13px;
+    font-size: 11px;
+  }
+  .detail-layout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .resource-facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    padding: 15px 0;
+    border-top: 1px solid var(--line);
+  }
+  .fact {
+    gap: 9px;
+    margin: 0;
+  }
+  .fact svg {
+    width: 19px;
+  }
+  .fact strong {
+    font-size: 11px;
+  }
+  .fact span,
+  .fact a {
+    font-size: 10px;
+  }
+  .detail-tabs button {
+    font-size: 10px;
+    padding: 13px 5px;
+  }
+  .detail-tab-content {
+    padding: 19px 17px 0;
+    font-size: 13px;
+    min-height: 255px;
+  }
+  .detail-tab-content h2 {
+    font-size: 14px;
+  }
+  .check-list li {
+    font-size: 12px;
+    gap: 8px;
+  }
+  .detail-actions {
+    padding: 12px 17px 0;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .detail-actions > .button {
+    font-size: 12px;
+    min-height: 42px;
+  }
+  .external-note {
+    font-size: 10px;
+    padding: 12px 17px 16px;
+  }
+  .access-note {
+    font-size: 11px;
+  }
+  .related-section {
+    margin-top: 28px;
+  }
+  .reading-main {
+    display: block;
+  }
+  .reading-illustration {
+    display: none;
+  }
+  .reading-heading {
+    gap: 18px;
+    margin-bottom: 20px;
+  }
+  .reading-heading h1 {
+    font-size: 28px;
+  }
+  .reading-tools {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .reading-grid {
+    grid-template-columns: 1fr;
+  }
+  .reading-card {
+    grid-template-columns: 58px 1fr;
+    gap: 0 12px;
+    padding: 16px;
+  }
+  .reading-card .resource-thumb {
+    width: 58px;
+    height: 62px;
+    font-size: 22px;
+  }
+  .reading-card .card-actions .button {
+    font-size: 11px;
+    padding: 10px;
+    min-height: 40px;
+  }
+  .reading-card .card-tags-row {
+    margin-top: 7px;
+  }
+  .reading-card .card-description {
+    font-size: 12px;
+  }
+  .reading-card h3 {
+    font-size: 15px;
+  }
+  .reading-card .tags > span {
+    font-size: 10px;
+  }
+  .reading-storage-note {
+    font-size: 10px;
+    align-items: flex-start;
+  }
+  .empty-state {
+    padding: 35px 18px;
+  }
+  .empty-state h1,
+  .empty-state h2 {
+    font-size: 23px;
+  }
+  .empty-state p {
+    font-size: 13px;
+  }
+  .about-hero {
+    grid-template-columns: 1fr;
+    padding: 28px 23px;
+    gap: 20px;
+  }
+  .about-hero h1 {
+    font-size: 37px;
+  }
+  .about-hero > div > p:not(.eyebrow) {
+    font-size: 13px;
+  }
+  .about-hero > img {
+    max-height: 185px;
+  }
+  .about-section {
+    margin-top: 28px;
+  }
+  .about-section h2 {
+    font-size: 23px;
+  }
+  .about-section > p {
+    font-size: 13px;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    margin-top: 20px;
+  }
+  .values-grid article {
+    padding: 21px;
+  }
+  .values-grid h3 {
+    font-size: 17px;
+  }
+  .about-prose {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 28px;
+  }
+  .about-prose h2 {
+    font-size: 21px;
+  }
+  .about-prose p {
+    font-size: 13px;
+  }
+  .toast {
+    font-size: 12px;
+    width: max-content;
+    padding: 12px 16px;
+    bottom: 16px;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+  .brand > span {
+    font-size: 21px;
+  }
+  .brand > svg {
+    width: 31px;
+  }
+  .header-actions {
+    display: none;
+  }
+  .hero-copy {
+    padding: 25px 17px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero-handwriting {
+    font-size: 19px;
+    right: 16px;
+  }
+  .subject-pills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .subject-pills > a {
+    font-size: 11px;
+  }
+  .resource-grid:not(.reading-grid) {
+    grid-template-columns: 1fr;
+  }
+  .resource-card {
+    padding: 18px;
+  }
+  .resource-card h3 {
+    font-size: 16px;
+  }
+  .card-description {
+    font-size: 12px;
+  }
+  .tags > span {
+    font-size: 10px;
+  }
+  .card-actions > .primary-button {
+    font-size: 12px;
+  }
+  .subjects-grid {
+    gap: 9px;
+  }
+  .section-title h2 {
+    font-size: 19px;
+  }
+  .section-title > a {
+    font-size: 9px;
+  }
+  .detail-heading h1 {
+    font-size: 20px;
+  }
+  .detail-tabs button {
+    font-size: 9px;
+  }
+}
